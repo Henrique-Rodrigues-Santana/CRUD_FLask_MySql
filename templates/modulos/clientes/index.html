@@ -1,0 +1,36 @@
+{% include 'header.html' %}
+<h1 class="text-center">Lista de Clientes</h1>
+<div>
+    <a href="http://" class="btn btn-primary">Novo</a>
+</div>
+
+<div class="table-responsive"><br>
+    <table
+        class="table">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Telefone</th>
+                <th>Fechar</th>
+                <th>Acionar</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr class="">
+                <td scope="row">Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>
+                    <a href="http://" class="btn btn-success">editar</a>
+                    <a href="http://" class="btn btn-danger">excluir</a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% include 'footer.html' %}

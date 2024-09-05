@@ -1,0 +1,59 @@
+{% include 'header.html' %}
+
+<div class="row" >
+    <div class="col-4"></div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">Bem Vindo</div>
+            <div class="card-body">
+                <h4 class="card-title">Adicionar Cliente</h4>
+                <form action="/clientes/cadastro/guardar" method="POST">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Nome</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="nome"
+                            id="nome"
+                            aria-describedby="helpId"
+                            placeholder=""
+                        />
+                        <small id="helpId" class="form-text text-muted">Nome Completo</small>
+                    </div>
+                   
+                    <div class="mb-3">
+                        <label for="" class="form-label">Telefone</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="telefone"
+                            id="telefone"
+                            aria-describedby="helpId"
+                            placeholder=""
+                        />
+                        <small id="helpId" class="form-text text-muted">(xx) 9 xxxx-xxxx</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Fechar</label>
+                        <input
+                            type="date"
+                            class="form-control"
+                            name="data"
+                            id="data"
+                            aria-describedby="helpId"
+                            placeholder=""
+                        />
+                        <small id="helpId" class="form-text text-muted">Quando vai datar</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="col-4"></div>
+</div>
+</div>
+{% include 'footer.html' %}

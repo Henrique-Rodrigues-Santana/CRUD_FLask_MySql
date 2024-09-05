@@ -24,8 +24,8 @@
                 <td>{{cliente['telefone']}}</td>
                 <td>{{cliente['data']}}</td>
                 <td>
-                    <a href="http://" class="btn btn-success">editar</a>
-                    <a href="http://" class="btn btn-danger">excluir</a>
+                    <a href="/clientes/edit/{{cliente['id']}}" class="btn btn-success">editar</a>
+                    <a href="/clientes/deletar/{{cliente['id']}}" class="btn btn-danger">excluir</a>
                 </td>
                 
             </tr>

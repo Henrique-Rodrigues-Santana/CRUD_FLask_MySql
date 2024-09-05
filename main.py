@@ -66,8 +66,13 @@ def guardar():
     conexao.commit()
     return redirect('/clientes')
 
-
-
+@app.route('/clientes/deletar/<int:id>')
+def deletar(id):
+    conexao = mysql.connection
+    cursor = conexao.cursor()
+    cursor.execute("DELETE FROM clientes WHERE id=%s", (id,))
+    conexao.commit()
+    return redirect("/clientes")
 
 if __name__ == '__main__':
     app.run(debug=True)

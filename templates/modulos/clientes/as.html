@@ -1,11 +1,4 @@
-{% include 'header.html' %}
-<h1 class="text-center">Lista de Clientes</h1>
-<div>
-    <a href="http://" class="btn btn-primary">Novo</a>
-</div>
-
-<div class="table-responsive"><br>
-    <table
+<table
         class="table">
         <thead class="table-dark">
             <tr>
@@ -17,11 +10,11 @@
             </tr>
         </thead>
         <tbody>
-            {% for cliente in clientes_t %}
+            {% for cliente in clientes %}
             <tr class="">
-                <td scope="row">{{cliente[0]}} </td>
-                <td>{{cliente[1]}}</td>
-                <td>{{cliente[2]}}</td>
+                <td scope="row">{{cliente.id}} </td>
+                <td>{{cliente.nome}}</td>
+                <td>{{cliente.telefone}}</td>
                 <td>Item</td>
                 <td>
                     <a href="http://" class="btn btn-success">editar</a>
@@ -32,6 +25,3 @@
             {% endfor %}
         </tbody>
     </table>
-</div>
-
-{% include 'footer.html' %}
